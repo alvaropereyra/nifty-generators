@@ -2,12 +2,12 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('nifty-generators', '0.3.0') do |p|
+Echoe.new('xenda-nifty-generators', '0.3.2') do |p|
   p.project        = "niftygenerators"
-  p.description    = "A collection of useful generator scripts for Rails."
-  p.url            = "http://github.com/ghart/nifty-generators"
-  p.author         = 'Greg Hart'
-  p.email          = "ghart (at) cs1 (dot) com"
+  p.description    = "A collection of useful generator scripts for Rails with extra juice"
+  p.url            = "http://github.com/xenda/nifty-generators"
+  p.author         = 'Alvaro Pereyra'
+  p.email          = "alvaro (at) xendacentral (dot) com"
   p.ignore_pattern = ["script/*"]
   p.development_dependencies = []
 end

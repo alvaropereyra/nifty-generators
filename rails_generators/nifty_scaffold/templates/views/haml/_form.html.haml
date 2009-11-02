@@ -1,10 +1,8 @@
-- form_for @<%= singular_name %> do |f|
-  = f.error_messages
+- semantic_form_for @<%= singular_name %> do |form|
+  = form.error_messages
+  - form.inputs do
   <%- for attribute in attributes -%>
-  %p
-    = f.label :<%= attribute.name %>
-    %br
-    = f.<%= attribute.field_type %> :<%= attribute.name %>
+    = form.input :<%= attribute.name %>
   <%- end -%>
-  %p
-    = f.submit "Submit"
+  - form.buttons do
+    = form.commit_button "Submit"
